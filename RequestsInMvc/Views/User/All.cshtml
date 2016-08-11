@@ -1,0 +1,30 @@
+﻿@model dynamic
+
+@{
+    ViewBag.Title = "All";
+}
+
+<h2>All Users</h2>
+
+
+<ul>
+    <li>
+        <a id="btnDelete" href="#">DELETE a user</a>
+    </li>
+    <li>
+        <a id="btnSearch" href="#">GET users search fillters(name, email)</a>       
+    </li>
+    <li>
+        <a id="btnSearchByObject" href="#">GET users by pageNo, pageSize, and search fillters (urlencoded request faills partialy)</a>       
+    </li>
+    <li>
+        <a id="btnGrid" href="#">GET users by pageNo, pageSize, and search fillters (json request faills partialy)</a>        
+    </li>
+</ul>
+
+
+
+@section scripts
+{
+    <script src="@Url.Content("~/Scripts/Views/User/all.js")"></script>
+}

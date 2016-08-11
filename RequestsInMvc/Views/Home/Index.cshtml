@@ -1,0 +1,48 @@
+﻿@{
+    ViewBag.Title = "Home";
+}
+
+<h2>Home Tests</h2>
+
+
+<ul>
+    <li>
+        Create - to create a user
+        <ul>
+            <li>
+                <a href="@Url.Action("Create", "User")">POST a user</a>
+            </li>
+        </ul>
+    </li>
+    <li>
+        Details - to show a user
+        <ul>
+            <li>
+                <a href="@Url.Action("Details", "User", new {id = 1})">GET a user</a>
+            </li>
+        </ul>
+    </li>
+    <li>
+        Edit - to edit a user
+        <ul>
+            <li>
+                <a href="@Url.Action("Edit", "User", new {id = 1})">PUT a user</a>
+            </li>
+        </ul>
+    </li>
+    <li>
+        Grid - shows all user with delete option,
+        <a href="@Url.Action("All", "User")">Show</a>
+        <ul>
+            <li>
+                GET(POST is better to use) all users
+            </li>
+            <li>
+                DELETE a user
+            </li>
+        </ul>
+    </li>
+</ul>
+
+
+
